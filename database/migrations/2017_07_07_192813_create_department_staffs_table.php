@@ -17,8 +17,7 @@ class CreateDepartmentStaffsTable extends Migration
             $table->increments('id');
             $table->integer('department_id', false, true)           ->comment('部门外键');
             $table->integer('staff_id', false, true)                ->comment('员工外键');
-            $table->tinyInteger('attendance_type_id', false, true)->default(null)->comment('考勤的参与方式（全职\自主）');
-
+            $table->integer('attendance_type_id', false, true)->default(null)->comment('考勤的参与方式（全职打卡\自主打卡）');
 
 
             //索引

@@ -28,11 +28,11 @@ class CreateLoginTable extends Migration
             $table->string('last_login_city')->nullable()->comment('最后登录城市');
             $table->ipAddress('last_login_ip')->nullable()->comment('最后登录IP');
 
+            $table->index('staff_no');
+            $table->index('mobile');
+            $table->index('email');
 
-            $table->foreign('staff_no') ->references('id')->on('staffs')->onDelete('cascade');
-            $table->foreign('email')    ->references('email')->on('staffs')->onUpdate('cascade');
-            $table->foreign('staff_no') ->references('staff_no')->on('staffs')->onUpdate('cascade');
-            $table->foreign('mobile')   ->references('mobile')->on('staffs')->onUpdate('cascade');
+            $table->foreign('staff_id') ->references('id')->on('staffs')->onDelete('cascade');
         });
     }
 
