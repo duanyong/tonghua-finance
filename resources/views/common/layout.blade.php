@@ -6,7 +6,7 @@
 <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>Metronic Admin Theme #6 | User Login 6</title>
+    <title>@yield('title') - 同华建筑</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Preview page of Metronic Admin Theme #6 for " name="description" />
@@ -35,9 +35,7 @@
 </head>
 
 <body class=" login">
-@yield('header')
 @yield('content')
-@yield('footer')
 
 <!--[if lt IE 9]>
 <script src="http://client.sina.com.cn/assets/global/plugins/respond.min.js"></script>
@@ -67,11 +65,5 @@
 
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="assets/js/login.js"></script>
-<!-- END PAGE LEVEL SCRIPTS -->
-
-<!-- BEGIN THEME LAYOUT SCRIPTS -->
-
-<!-- END THEME LAYOUT SCRIPTS -->
 </body>
-
 </html>
