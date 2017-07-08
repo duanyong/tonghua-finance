@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('login');
 });
+
+
+Route::get('/login', 'LoginController@index');
