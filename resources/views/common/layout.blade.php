@@ -35,6 +35,8 @@
 </head>
 
 <body class=" login">
+<script src="http://client.sina.com.cn/assets/global/plugins/jquery.min.js"></script>
+<script src="http://client.sina.com.cn/assets/global/plugins/bootstrap/js/bootstrap.min.js"></script>
 @yield('content')
 
 <!--[if lt IE 9]>
@@ -44,8 +46,6 @@
 <![endif]-->
 
 <!-- BEGIN CORE PLUGINS -->
-<script src="http://client.sina.com.cn/assets/global/plugins/jquery.min.js"></script>
-<script src="http://client.sina.com.cn/assets/global/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="http://client.sina.com.cn/assets/global/plugins/js.cookie.min.js"></script>
 <script src="http://client.sina.com.cn/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <script src="http://client.sina.com.cn/assets/global/plugins/jquery.blockui.min.js"></script>
@@ -62,8 +62,5 @@
 <!-- BEGIN THEME GLOBAL SCRIPTS -->
 <script src="http://client.sina.com.cn/assets/global/scripts/app.min.js"></script>
 <!-- END THEME GLOBAL SCRIPTS -->
-
-<!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script src="assets/js/login.js"></script>
 </body>
 </html>
