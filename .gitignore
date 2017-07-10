@@ -1,5 +1,6 @@
 /node_modules
 /public/hot
+/public/fonts
 /public/storage
 /storage/*.key
 /vendor
@@ -11,3 +12,7 @@ npm-debug.log
 .env
 
 .DS_Store
+package-lock.json
+public/css/
+public/js/
+public/mix-manifest.json
