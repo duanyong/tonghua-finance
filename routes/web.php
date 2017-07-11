@@ -20,7 +20,7 @@ Route::get('/login', 'LoginController@index');
 
 
 # 用户点击登录按钮时请求的地址
-Route::get('/auth/oauth', 'Auth\LoginController@oauth');
+Route::get('/auth/wechat', 'Auth\LoginController@oauth');
 #
 # # 微信接口回调地址
-Route::get('/auth/callback', 'Auth\LoginController@callback');
+Route::get('/auth/wccallback', 'Auth\LoginController@callback');
