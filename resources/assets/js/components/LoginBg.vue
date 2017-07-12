@@ -2,8 +2,8 @@
 <div class="col-md-6 bs-reset">
     <div id="background-image" class="login-bg"></div>
 </div>
+
 </template>
-<script src="http://client.sina.com.cn/assets/global/plugins/backstretch/jquery.backstretch.min.js"></script>
 <style scoped>
 .user-login .login-bg {
     background-position: center;
@@ -12,7 +12,10 @@
     min-height: 100vh;
 }
 </style>
+
 <script>
+    import
+
     export default {
         name: 'LoginBg',
         mounted: function () {
