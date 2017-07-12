@@ -12,6 +12,7 @@ npm-debug.log
 .env
 
 .DS_Store
+package-lock.json
 bootstrap/
 public/fonts/
 public/js/

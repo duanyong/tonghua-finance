@@ -331,7 +331,6 @@
                     }
 
                     this.goHome();
-                    this.hideLoginUi();
                 })
                 .catch(error => {
                     this.isLogin = false;
