@@ -26,18 +26,14 @@
     <link href="http://client.sina.com.cn/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
     <link href="http://client.sina.com.cn/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
     <!-- END THEME GLOBAL STYLES -->
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <link href="assets/css/login.css" rel="stylesheet" type="text/css" />
-    <!-- END PAGE LEVEL STYLES -->
-    <!-- BEGIN THEME LAYOUT STYLES -->
-    <!-- END THEME LAYOUT STYLES -->
+
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
 <body class=" login">
 <script src="http://client.sina.com.cn/assets/global/plugins/jquery.min.js"></script>
 <script src="http://client.sina.com.cn/assets/global/plugins/bootstrap/js/bootstrap.min.js"></script>
-@yield('content')
+
 
 <!--[if lt IE 9]>
 <script src="http://client.sina.com.cn/assets/global/plugins/respond.min.js"></script>
@@ -56,11 +52,21 @@
 <script src="http://client.sina.com.cn/assets/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
 <script src="http://client.sina.com.cn/assets/global/plugins/jquery-validation/js/additional-methods.min.js"></script>
 <script src="http://client.sina.com.cn/assets/global/plugins/select2/js/select2.full.min.js"></script>
-<script src="http://client.sina.com.cn/assets/global/plugins/backstretch/jquery.backstretch.min.js"></script>
+
+
+
+<div id="app" class="container">
+@yield('content')
+</div>
+
+<script src="/js/app.js"></script>
+
+
 <!-- END PAGE LEVEL PLUGINS -->
 
 <!-- BEGIN THEME GLOBAL SCRIPTS -->
 <script src="http://client.sina.com.cn/assets/global/scripts/app.min.js"></script>
 <!-- END THEME GLOBAL SCRIPTS -->
+
 </body>
 </html>

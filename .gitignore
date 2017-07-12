@@ -12,4 +12,6 @@ npm-debug.log
 
 .DS_Store
 public/fonts/
+public/js/
+public/css/
 public/mix-manifest.json
