@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-        <background></background>
+        <background-image></background-image>
     </div>
 </div>
 

@@ -20,11 +20,11 @@
                         <input type="checkbox" name="remember" value="1" /> 记住我<span></span>
                     </label>
                     <div class="forgot-password text-right">
-                        <a href="javascript:void(0);" id="forget-password" class="forget-password">忘记密码?</a>
+                        <a v-on:click="showForgotUi" href="javascript:void(0);" id="forget-password" class="forget-password">忘记密码?</a>
                     </div>
                 </div>
                 <div class="col-sm-12">
-                    <button class="btn blue" type="submit">登&nbsp;录</button>
+                    <button v-on:click="login" class="btn blue" type="submit">登&nbsp;录</button>
                 </div>
             </div>
         </form>
@@ -297,13 +297,16 @@
             }
         },
 
-        mounted() {
-            console.log('Component mounted.')
-        },
 
         methods: {
             showLoginUi: function() {
-                $('login-base').show();
+                $('#login_base').show();
+                $('#login_forget').hide();
+            },
+
+            showForgotUi: function() {
+                $('#login_base').hide();
+                $('#login_forget').show();
             },
 
             hideLoginUi: function() {
@@ -315,25 +318,12 @@
                 this.$router.push('/home');
             },
 
-            //开始登录
-            login: function() {
-                if (this.isLogin === true) {
-                    return false;
-                }
-
-                if (this.username !== '') {
-                    alert('username');
-                }
-
-                if (this.password !== '') {
-                    alert('password');
-                }
-
-                this.isLogin = true;
-
+            ajax: function() {
                 Vue.axios.post('/api/login', {
-                    username: hex_sha1(hex_sha1(this.password)),
-                    password: hex_sha1(hex_sha1(this.username))
+//                    username: hex_sha1(hex_sha1(this.password)),
+//                    password: hex_sha1(hex_sha1(this.username))//
+                    username: this.password,
+                    password: this.username
                 })
                 .then(response => {
                     if (response.data.error !== 0) {
@@ -344,22 +334,33 @@
                     this.hideLoginUi();
                 })
                 .catch(error => {
-
                     this.isLogin = false;
                     alert('network is error.');
                 });
+            },
+
+            //开始登录
+            login: function() {
+                if (this.isLogin === true) {
+                    return false;
+                }
+
+                if (this.username.trim().length === 0) {
+                    alert('username');
+                }
+
+                if (this.password.trim().length === 0) {
+                    alert('password');
+                }
+
+                this.isLogin = true;
+
+                this.ajax();
             }
+        },
+
+        mounted() {
+            this.showLoginUi();
         }
     }
-    jQuery(document).ready(function() {
-        $('.login-bg').backstretch([
-                "/img/login/bg1.jpg",
-                "/img/login/bg2.jpg",
-                "/img/login/bg3.jpg"
-            ], {
-                fade: 1000,
-                duration: 8000
-            }
-        );
-    });
 </script>

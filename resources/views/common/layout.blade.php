@@ -55,7 +55,7 @@
 
 
 
-<div id="app" class="container">
+<div id="app" class="">
 @yield('content')
 </div>
 

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\LoginRequest;
 use App\Models\Login;
-use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -23,9 +23,10 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function login(LoginRequest $request)
     {
-        //
+        $username = $request->input('username');
+        $password = $request->input('password');
     }
 
     /**
@@ -34,7 +35,7 @@ class LoginController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LoginRequest $request)
     {
         //
     }
@@ -68,7 +69,7 @@ class LoginController extends Controller
      * @param  \App\Models\Login  $login
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Login $login)
+    public function update(LoginRequest $request, Login $login)
     {
         //
     }
