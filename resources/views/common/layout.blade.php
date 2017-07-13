@@ -52,11 +52,10 @@
 <script src="http://client.sina.com.cn/assets/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
 <script src="http://client.sina.com.cn/assets/global/plugins/jquery-validation/js/additional-methods.min.js"></script>
 <script src="http://client.sina.com.cn/assets/global/plugins/select2/js/select2.full.min.js"></script>
-<script src="/js/"></script>
 
 
 
-<div id="app" class="">
+<div id="app">
 @yield('content')
 </div>
 

@@ -14,8 +14,6 @@
 </style>
 
 <script>
-    import
-
     export default {
         name: 'LoginBg',
         mounted: function () {

@@ -23,6 +23,7 @@
                         <a v-on:click="showForgotUi" href="javascript:void(0);" id="forget-password" class="forget-password">忘记密码?</a>
                     </div>
                 </div>
+
                 <div class="col-sm-12">
                     <button v-on:click="login" class="btn blue" type="submit">登&nbsp;录</button>
                 </div>
@@ -277,7 +278,6 @@
         }
     }
 </style>
-<script src="/js/sha1.min.js"></script>
 <script>
     //Login登录组件
     import Vue from 'vue';

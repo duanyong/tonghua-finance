@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
 use App\Models\Login;
+use FlorianWolters\Component\Core\StringUtils;
 
 class LoginController extends Controller
 {
@@ -27,6 +28,16 @@ class LoginController extends Controller
     {
         $username = $request->input('username');
         $password = $request->input('password');
+
+        $data = array();
+        if (StringUtils::isMobileNumber($username)) {
+
+        }
+
+
+
+        $login = new Login();
+
     }
 
     /**

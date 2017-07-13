@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "96098e473b028cdb2529580554a1ae3e",
+    "content-hash": "46d689156ff14ba6cf495811313483ea",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -105,6 +105,61 @@
                 "string"
             ],
             "time": "2015-11-06T14:35:42+00:00"
+        },
+        {
+            "name": "duanyong/component-core-stringutils",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/duanyong/PHP-Component-Core-StringUtils.git",
+                "reference": "cbac46e5956f6c217d0085923861d99bb3d8338d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/duanyong/PHP-Component-Core-StringUtils/cbac46e5956f6c217d0085923861d99bb3d8338d.zip",
+                "reference": "cbac46e5956f6c217d0085923861d99bb3d8338d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "pdepend/pdepend": "2.0.*@dev",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phpmd/phpmd": "2.0.*@dev",
+                "phpunit/phpunit": "4.1.*",
+                "satooshi/php-coveralls": "dev-master",
+                "sebastian/phpcpd": "2.0.*",
+                "sebastian/phpdcd": "1.0.*",
+                "squizlabs/php_codesniffer": "2.0.*@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FlorianWolters\\": "src/php/FlorianWolters"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Wolters",
+                    "email": "wolters.fl@gmail.com",
+                    "homepage": "http://blog.florianwolters.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Offers operations on the data type string as a PHP component.",
+            "homepage": "http://github.com/FlorianWolters/PHP-Component-Core-StringUtils",
+            "keywords": [
+                "helper",
+                "language",
+                "string",
+                "wrapper"
+            ],
+            "time": "2014-05-03T16:27:16+00:00"
         },
         {
             "name": "erusev/parsedown",
