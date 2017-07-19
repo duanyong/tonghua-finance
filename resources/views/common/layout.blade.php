@@ -26,9 +26,7 @@
     <link href="http://client.sina.com.cn/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
     <link href="http://client.sina.com.cn/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
     <!-- END THEME GLOBAL STYLES -->
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <link href="assets/css/login.css" rel="stylesheet" type="text/css" />
-    <!-- END PAGE LEVEL STYLES -->
+
     <!-- BEGIN THEME LAYOUT STYLES -->
     <!-- END THEME LAYOUT STYLES -->
     <link rel="shortcut icon" href="favicon.ico" />
