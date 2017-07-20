@@ -1,39 +1,40 @@
 @extends('common.layout')
 @section('content')
+<link href="/css/login.css" rel="stylesheet" type="text/css" />
+
 <div class="user-login">
     <div class="row bs-reset">
         <div class="col-md-6 login-container bs-reset">
             <img class="login-logo login-6" src="http://client.sina.com.cn/assets/pages/img/login/login-invert.png" />
             <div id="login_base" class="login-content">
                 <h1>用户登录</h1>
-                <form action="javascript:void(0);" class="login-form" method="post">
+                {{ Form::open(array('url' => '/login', 'method' => 'post', 'class' => 'login-form')) }}
                     <div class="alert alert-danger display-hide">
                         <button class="close" data-close="alert"></button>
                         <span>请输入您的登录账号</span>
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="登录账号" name="username" required/>
+                            {{ Form::text('username', '', ['autocomplete'=>'off', 'placeholder' => '工号或邮箱前缀', 'class' => 'form-control form-control-solid placeholder-no-fix form-group', 'required']) }}
                         </div>
                         <div class="col-xs-6">
-                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="登录密码" name="password" required/>
+                            {{ Form::password('password', ['autocomplete'=>'off', 'placeholder' => '请输入登录密码', 'class' => 'form-control form-control-solid placeholder-no-fix form-group', 'required']) }}
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <label class="rememberme mt-checkbox mt-checkbox-outline">
-                                <input type="checkbox" name="remember" value="1" /> 记住我<span></span>
+                                {{ Form::checkbox('remember') }}记住我<span></span>
                             </label>
                             <div class="forgot-password text-right">
                                 <a href="javascript:void(0);" id="forget-password" class="forget-password">忘记密码?</a>
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <button class="btn blue" type="submit">登&nbsp;录</button>
+                            {{ Form::submit('登&nbsp;录', ['class' => 'btn blue']) }}
                         </div>
                     </div>
-                </form>
-                <!-- BEGIN FORGOT PASSWORD FORM -->
+                {{ Form::close() }}
             </div>
 
 
@@ -76,8 +77,6 @@
         </div>
     </div>
 </div>
-<script src="/js/app.js"></script>
-<script>
+<script src="/js/login.js"></script>
 
-</script>
 @endsection

@@ -83,9 +83,9 @@ var Login = function() {
         init: function() {
             handleLogin();
             $('.login-bg').backstretch([
-                    "assets/img/login/bg1.jpg",
-                    "assets/img/login/bg2.jpg",
-                    "assets/img/login/bg3.jpg"
+                    "/img/login/bg1.jpg",
+                    "/img/login/bg2.jpg",
+                    "/img/login/bg3.jpg"
                 ], {
                     fade: 1000,
                     duration: 8000

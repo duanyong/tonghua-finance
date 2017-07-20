@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Login;
 use Illuminate\Http\Request;
 
+
 class LoginController extends Controller
 {
     /**
@@ -29,14 +30,26 @@ class LoginController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * 用户登录（用户名,密码,是否名登录）
+     *
+     *  用户名包括:工号\和邮箱前缀
      *
      * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\Login  $login
+     *
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function login(Request $request, Login $login)
     {
-        //
+        if (false === $login->isLogin($request->get('username'), $request->get('password') )) {
+            //用户名或者密码不对
+            return false;
+        }
+
+        $request->cookie('token', md5('a'));
+
+
+        redirect('/finance');
     }
 
     /**
