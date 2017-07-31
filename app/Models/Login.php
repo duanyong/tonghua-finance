@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Carbon\Carbon;
-use FlorianWolters\Component\Core\StringUtils;
+use duanyong\Component\Core\StringUtils;
 use Illuminate\Database\Eloquent\Model;
 
 class Login extends Model

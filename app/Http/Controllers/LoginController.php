@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Login;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 
 class LoginController extends Controller
@@ -11,7 +12,7 @@ class LoginController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
@@ -22,7 +23,7 @@ class LoginController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -37,7 +38,7 @@ class LoginController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Login  $login
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function login(Request $request, Login $login)
     {
@@ -56,7 +57,7 @@ class LoginController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Login  $login
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function show(Login $login)
     {
@@ -67,7 +68,7 @@ class LoginController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Login  $login
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function edit(Login $login)
     {
@@ -79,7 +80,7 @@ class LoginController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Login  $login
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function update(Request $request, Login $login)
     {
@@ -90,7 +91,7 @@ class LoginController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Login  $login
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function destroy(Login $login)
     {

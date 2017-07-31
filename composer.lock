@@ -111,13 +111,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/duanyong/PHP-Component-Core-StringUtils.git",
-                "reference": "a5214a563f9ece4bb690ac273ed5467d5a454c27"
+                "url": "https://github.com/duanyong/StringUtils.git",
+                "reference": "f6480126edbdbb77da55af94518aae05f72e0e1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/duanyong/PHP-Component-Core-StringUtils/a5214a563f9ece4bb690ac273ed5467d5a454c27.zip",
-                "reference": "a5214a563f9ece4bb690ac273ed5467d5a454c27",
+                "url": "https://files.phpcomposer.com/files/duanyong/PHP-Component-Core-StringUtils/f6480126edbdbb77da55af94518aae05f72e0e1c.zip",
+                "reference": "f6480126edbdbb77da55af94518aae05f72e0e1c",
                 "shasum": ""
             },
             "require": {
@@ -160,7 +160,7 @@
                 "string",
                 "wrapper"
             ],
-            "time": "2017-07-19T09:17:40+00:00"
+            "time": "2017-07-20T08:14:04+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -293,16 +293,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.4.28",
+            "version": "v5.4.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "442511fc62121085d184355e4f964c88942bbecb"
+                "reference": "b9a64955f4278f45ac348a6e000b5ecc85da167a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/laravel/framework/442511fc62121085d184355e4f964c88942bbecb.zip",
-                "reference": "442511fc62121085d184355e4f964c88942bbecb",
+                "url": "https://files.phpcomposer.com/files/laravel/framework/b9a64955f4278f45ac348a6e000b5ecc85da167a.zip",
+                "reference": "b9a64955f4278f45ac348a6e000b5ecc85da167a",
                 "shasum": ""
             },
             "require": {
@@ -418,20 +418,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-06-30T13:43:07+00:00"
+            "time": "2017-07-19T19:26:19+00:00"
         },
         {
             "name": "laravel/tinker",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "7eb2e281395131897407285672ef5532e87e17f9"
+                "reference": "203978fd67f118902acff95925847e70b72e3daf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/laravel/tinker/7eb2e281395131897407285672ef5532e87e17f9.zip",
-                "reference": "7eb2e281395131897407285672ef5532e87e17f9",
+                "url": "https://files.phpcomposer.com/files/laravel/tinker/203978fd67f118902acff95925847e70b72e3daf.zip",
+                "reference": "203978fd67f118902acff95925847e70b72e3daf",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
                 "laravel",
                 "psysh"
             ],
-            "time": "2017-06-01T16:31:26+00:00"
+            "time": "2017-07-13T13:11:05+00:00"
         },
         {
             "name": "laravelcollective/html",
