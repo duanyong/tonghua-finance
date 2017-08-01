@@ -17,7 +17,7 @@ class LoginController extends Controller
     public function index()
     {
         //
-        return view('login');
+        return redirect('/');
     }
 
     /**
@@ -40,15 +40,17 @@ class LoginController extends Controller
      *
      * @return Response
      */
-    public function login(Request $request, Login $login)
+    public function login(Request $request)
     {
-        if (false === $login->isLogin($request->get('username'), $request->get('password') )) {
-            //用户名或者密码不对
-            return false;
-        }
+        dd($request);
 
-        $request->cookie('token', md5('a'));
-
+//        if (false === $login->isLogin($request->get('username'), $request->get('password') )) {
+//            //用户名或者密码不对
+//            return false;
+//        }
+//
+//        $request->cookie('token', md5('a'));
+//
 
         redirect('/finance');
     }
@@ -61,7 +63,7 @@ class LoginController extends Controller
      */
     public function show(Login $login)
     {
-        //
+        dd($login);
     }
 
     /**

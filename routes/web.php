@@ -16,5 +16,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('/login', 'LoginController@index');
-Route::post('/login', 'LoginController@login');
+//Route::get('/login', 'LoginController@index');
+Route::get('/login', function() {
+
+    dd(1);
+});
+//Route::post('/login', 'LoginController@login');
